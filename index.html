@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Fellowship LATAM–China</title>
+  <meta name="description" content="Tech Fellowship LATAM–China — ES / 中文">
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:#0b1220;color:#e5e7eb;line-height:1.6}
+    :root{--bg:#0b1220;--fg:#e5e7eb;--muted:#9ca3af;--card:rgba(17,24,39,.55);--border:rgba(148,163,184,.15);--accent:#22d3ee;--accent2:#8b5cf6;--shadow:0 10px 30px rgba(2,8,23,.45);--radius:16px;--maxw:1100px;}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    h1,h2,h3{line-height:1.2;margin:0 0 12px} p{margin:0 0 14px}
+    .container{width:min(100% - 32px, var(--maxw));margin-inline:auto}
+    .bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(1200px 600px at 10% 0%, rgba(34,211,238,.12), transparent 60%),radial-gradient(1000px 600px at 100% 10%, rgba(139,92,246,.14), transparent 60%),linear-gradient(180deg,#0b1220 0%,#0a0f1a 100%);}
+    .grid::before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 97%, rgba(148,163,184,.08) 97%) 0 0/ 100% 32px,linear-gradient(90deg,transparent 97%, rgba(148,163,184,.08) 97%) 0 0/ 32px 100%;opacity:.6;mask:radial-gradient(circle at 50% 50%, black 40%, transparent 70%)}
+    .site-header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(10,15,26,.45);border-bottom:1px solid var(--border)}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .lang-switch{display:flex;gap:8px;align-items:center}
+    .chip{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:13px;cursor:pointer}
+    .chip.active{color:var(--fg);border-color:rgba(34,211,238,.45)}
+    nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}
+    nav a{color:#cbd5e1;font-size:14px} nav a:hover{color:#fff}
+    .hero{padding:50px 0 26px;position:relative}
+    .hero .card{background:linear-gradient(180deg, rgba(17,24,39,.55), rgba(17,24,39,.35));border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:24px 20px;display:block}
+    .kicker{color:var(--accent);font-weight:700;letter-spacing:.6px;text-transform:uppercase;font-size:12px}
+    .hero h1{font-size:clamp(34px,6vw,56px);margin-top:8px}
+    .lead{font-size:clamp(16px,2.2vw,20px);color:#d1d5db;margin:10px 0 14px;max-width:820px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;cursor:pointer;color:#071219;font-weight:800;padding:14px 18px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 10px 24px rgba(34,211,238,.25), inset 0 -2px 0 rgba(255,255,255,.2)}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 16px 32px rgba(139,92,246,.25)}
+    .note{color:var(--muted);font-size:13px}
+    section{padding:24px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:clamp(14px,2.5vw,22px)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    @media (max-width:960px){.grid-3,.grid-2{grid-template-columns:1fr}}
+    .item h3{margin-bottom:6px;font-size:18px}
+    .icon{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:10px;background:linear-gradient(180deg, rgba(34,211,238,.15), rgba(139,92,246,.15));border:1px solid var(--border);margin-bottom:10px}
+    .limits{font-size:14px;color:#cbd5e1}
+    .muted-note{font-size:12px;color:var(--muted)}
+    footer{padding:28px 0 40px;color:var(--muted);border-top:1px solid var(--border);margin-top:24px}
+    .sep{height:1px;background:var(--border);margin:16px 0 0}
+    .lang-es{display:block} .lang-zh{display:none}
+    html[data-lang="zh"] .lang-es{display:none} html[data-lang="zh"] .lang-zh{display:block}
+    .cta-es{display:inline-flex} .cta-zh{display:none}
+    html[data-lang="zh"] .cta-es{display:none} html[data-lang="zh"] .cta-zh{display:inline-flex}
+    .nav-es{display:flex} .nav-zh{display:none}
+    html[data-lang="zh"] .nav-es{display:none} html[data-lang="zh"] .nav-zh{display:flex}
+  </style>
+</head>
+<body>
+  <div class="bg"><span class="grid"></span></div>
+
+  <header class="site-header">
+    <div class="container inner">
+      <div class="brand">Tech Fellowship LATAM–China</div>
+      <nav>
+        <ul class="nav-es">
+          <li><a href="#por-que">Por qué</a></li>
+          <li><a href="#quien">Quién</a></li>
+          <li><a href="#como">Cómo</a></li>
+          <li><a href="#aplicar">Aplicar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <ul class="nav-zh">
+          <li><a href="#por-que">为什么</a></li>
+          <li><a href="#quien">谁</a></li>
+          <li><a href="#como">如何</a></li>
+          <li><a href="#aplicar">申请</a></li>
+          <li><a href="#contacto">联系</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" aria-label="Selector de idioma / 语言切换">
+        <span class="chip chip-es active" onclick="setLang('es')">ES</span>
+        <span class="chip chip-zh" onclick="setLang('zh')">中文</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container card">
+        <span class="kicker">Cohorte fundadora · Hefei / Hangzhou</span>
+        <h1 class="lang-es">Tech Fellowship LATAM–China</h1>
+        <h1 class="lang-zh">拉美–中国科技联盟</h1>
+        <p class="lead lang-es">Aprovecha tus conocimientos y habilidades para impulsar el desarrollo de una región entera. Si tienes grandes sueños y ambición, este es tu lugar.</p>
+        <p class="lead lang-zh">利用你的知识与技能，推动整个地区的发展。若你胸怀大志且富有雄心，这里就是你的舞台。</p>
+        <div class="actions">
+          <a class="btn cta-es" href="https://ejpwd1odq4h7.jp.larksuite.com/share/base/form/shrjpO0nkszvTKdk41JllYlDPlg" target="_blank" rel="noopener">Atrévete y reserva 15 minutos</a>
+          <a class="btn cta-zh" href="https://ejpwd1odq4h7.jp.larksuite.com/share/base/form/shrjpO4lUWQBPMHeyCWdSqzDK3c" target="_blank" rel="noopener">勇敢尝试并预约 15 分钟</a>
+          <span class="note lang-es">— Doc-first. Sin datos sensibles.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- A QUIÉN BUSCAMOS -->
+    <section id="a-quien-buscamos">
+      <div class="container card">
+        <h2 class="lang-es">A quién buscamos</h2>
+        <h2 class="lang-zh">我们在寻找谁</h2>
+        <div class="grid-3">
+          <div class="item">
+            <div class="icon" aria-hidden="true"></div>
+            <h3 class="lang-es">Exploradores de mercados</h3>
+            <h3 class="lang-zh">市场探索者</h3>
+            <p class="lang-es">ven a <strong>China como laboratorio</strong> y a <strong>LATAM como terreno de despliegue</strong>.</p>
+            <p class="lang-zh">把<strong>中国视为实验室</strong>，将<strong>拉美视为落地与扩展的场域</strong>。</p>
+          </div>
+          <div class="item">
+            <div class="icon" aria-hidden="true"></div>
+            <h3 class="lang-es">Builders de IA</h3>
+            <h3 class="lang-zh">AI 构建者</h3>
+            <p class="lang-es">visionarios dispuestos a retarse en un <strong>mercado virgen</strong>, que quieran <strong>dejar su huella</strong> creando su propio destino.</p>
+            <p class="lang-zh">愿在<strong>尚未开垦的市场</strong>中挑战自我，以<strong>创造自己的命运并留下足迹</strong>的远见者。</p>
+          </div>
+          <div class="item">
+            <div class="icon" aria-hidden="true"></div>
+            <h3 class="lang-es">Operadores MCN</h3>
+            <h3 class="lang-zh">MCN 运营者</h3>
+            <p class="lang-es">atrevidos que quieren <strong>implementar este modelo en una nueva región</strong>, <strong>adueñándose de parte del éxito</strong>.</p>
+            <p class="lang-zh">敢于在新区域实施该模式，并<strong>将成功的一部分握在自己手中</strong>。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATOS RÁPIDOS -->
+    <section id="datos-rapidos">
+      <div class="container card">
+        <h2 class="lang-es">Datos rápidos</h2>
+        <h2 class="lang-zh">快速信息</h2>
+        <div class="grid-2">
+          <div class="item"><h3 class="lang-es">Base</h3><h3 class="lang-zh">基地</h3>
+            <p class="lang-es"><strong>Hefei (IA)</strong> y <strong>Hangzhou (MCN)</strong>.</p>
+            <p class="lang-zh"><strong>合肥（AI）</strong> 与 <strong>杭州（MCN）</strong>。</p>
+          </div>
+          <div class="item"><h3 class="lang-es">Ritmo</h3><h3 class="lang-zh">节奏</h3>
+            <p class="lang-es"><strong>14 días</strong> para construir algo real · <strong>90 días</strong> para pilotarlo.</p>
+            <p class="lang-zh"><strong>14 天</strong>打造真实可见的成果 · <strong>90 天</strong>推进试点。</p>
+          </div>
+          <div class="item"><h3 class="lang-es">Enfoque</h3><h3 class="lang-zh">聚焦</h3>
+            <p class="lang-es"><strong>IA aplicada × MCN operativo</strong> (educación, comercialización, negocios, traducción y mucho más).</p>
+            <p class="lang-zh"><strong>应用型 AI × 实操型 MCN</strong>（教育、商业化、业务、翻译等）。</p>
+          </div>
+          <div class="item"><h3 class="lang-es">Qué te llevas</h3><h3 class="lang-zh">你将获得</h3>
+            <p class="lang-es">mentoría, red China–Latam, “playbook” de ejecución, oportunidades de emprendimiento y equity, becas en USTC.</p>
+            <p class="lang-zh">导师辅导、中拉网络、“执行手册”、创业与股权机会、USTC 奖学金。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ UNIRTE -->
+    <section id="por-que">
+      <div class="container card">
+        <h2 class="lang-es">Por qué unirte</h2>
+        <h2 class="lang-zh">为什么加入</h2>
+        <ul>
+          <li class="lang-es"><strong>Aduéñate de tu talento</strong> — te empoderaremos para maximizar tu talento, impacto y futuro.</li>
+          <li class="lang-zh"><strong>掌控你的才能</strong>——我们将赋能你最大化你的才能、影响力与未来。</li>
+          <li class="lang-es"><strong>Acelera el futuro</strong> — accede a oportunidades para acelerar el desarrollo de una región con un enorme potencial.</li>
+          <li class="lang-zh"><strong>加速未来</strong>——获取机会，加速一个潜力巨大的地区的发展。</li>
+          <li class="lang-es"><strong>Impacto real</strong> — proyectos con entregables visibles (Blueprint, SOP Kit, LoIs si aplica) y métricas.</li>
+          <li class="lang-zh"><strong>切实影响</strong>——项目具备可见交付物（蓝图、SOP 工具包、LoIs（如适用））及量化指标。</li>
+          <li class="lang-es"><strong>Red que abre puertas</strong> — conexiones China↔Latam y referentes técnicos/operativos.</li>
+          <li class="lang-zh"><strong>开门的网络</strong>——贯通中↔拉的连接，以及技术/运营方面的标杆资源。</li>
+          <li class="lang-es"><strong>Mentoría + método</strong> — acompañamiento con objetivos a 14d/90d y disciplina doc-first.</li>
+          <li class="lang-zh"><strong>导师 + 方法论</strong>——以 14 天/90 天为目标节奏，秉持文档优先的自律。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUIÉN PUEDE APLICAR -->
+    <section id="quien">
+      <div class="container card">
+        <h2 class="lang-es">Quién puede aplicar</h2>
+        <h2 class="lang-zh">谁可以申请</h2>
+        <ul>
+          <li class="lang-es"><strong>Perfil:</strong> estudiantes o profesionales “hands-on”.</li>
+          <li class="lang-zh"><strong>画像：</strong>学生或实干型从业者。</li>
+          <li class="lang-es"><strong>Habilidades (elige tu pista):</strong> IA: LLM Apps (RAG/agents/tool-use) o MLOps/Infra (eval/tracing). MCN: operadores con SOPs reales y métricas verificables.</li>
+          <li class="lang-zh"><strong>能力（选择你的赛道）：</strong>AI：LLM 应用（RAG/智能体/工具使用）或 MLOps/基础设施（评估/追踪）。MCN：具备真实 SOP 与可验证指标的运营者。</li>
+          <li class="lang-es"><strong>Mindset:</strong> curiosidad radical, respeto intercultural, ambición por crear algo grande, deseo de ser dueño de tu trabajo y obsesión por resultados.</li>
+          <li class="lang-zh"><strong>心态：</strong>强烈的好奇心、跨文化尊重、打造大事业的雄心、对工作所有权的追求，以及对结果的执着。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como">
+      <div class="container card">
+        <h2 class="lang-es">Cómo funciona</h2>
+        <h2 class="lang-zh">如何运作</h2>
+        <ol>
+          <li class="lang-es"><strong>01. Aplicación</strong> — llena el formulario, comparte tu visión y mejor proyecto.</li>
+          <li class="lang-zh"><strong>01. 申请</strong>——填写表单，分享你的愿景与最佳项目。</li>
+          <li class="lang-es"><strong>02. Selección (20 min)</strong> — entrevista corta para evaluar si encajas con nosotros.</li>
+          <li class="lang-zh"><strong>02. 甄选（20 分钟）</strong>——简短面试以评估契合度。</li>
+          <li class="lang-es"><strong>03. Construcción (14d)</strong> — desarrollaremos el primer átomo funcional o SOP Kit visible.</li>
+          <li class="lang-zh"><strong>03. 构建（14 天）</strong>——打造第一个可运行的原子功能或可见的 SOP 工具包。</li>
+          <li class="lang-es"><strong>04. Piloto (90d)</strong> — continúa con el desarrollo de tu prototipo y su implementación.</li>
+          <li class="lang-zh"><strong>04. 试点（90 天）</strong>——继续完善原型并推进实施落地。</li>
+          <li class="lang-es"><strong>05. Demo & next steps</strong> — mostramos resultados y definimos siguientes hitos.</li>
+          <li class="lang-zh"><strong>05. 演示与后续</strong>——展示成果并明确下一阶段里程碑。</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- APLICAR AHORA (sin QR) -->
+    <section id="aplicar">
+      <div class="container card">
+        <h2 class="lang-es">Aplicar ahora</h2>
+        <h2 class="lang-zh">立即申请</h2>
+        <div class="actions" style="margin-bottom:10px">
+          <a class="btn cta-es" href="https://ejpwd1odq4h7.jp.larksuite.com/share/base/form/shrjpO0nkszvTKdk41JllYlDPlg" target="_blank" rel="noopener">Atrévete y reserva 15 minutos</a>
+          <a class="btn cta-zh" href="https://ejpwd1odq4h7.jp.larksuite.com/share/base/form/shrjpO4lUWQBPMHeyCWdSqzDK3c" target="_blank" rel="noopener">勇敢尝试并预约 15 分钟</a>
+        </div>
+        <p class="lang-es"><strong>Mientras tanto:</strong> deja tu interés por correo o agrega WeChat. No compartas datos sensibles.</p>
+        <p class="lang-zh">同时：可通过邮件留言或添加 WeChat。请勿分享敏感信息。</p>
+        <div>
+          <p class="lang-es"><strong>Correo:</strong> <a href="mailto:tech.fellowship.latam@gmail.com">tech.fellowship.latam@gmail.com</a><br>
+             <strong>WeChat ID:</strong> wxid_4ndidb5n6w9x12</p>
+          <p class="lang-zh"><strong>邮件:</strong> <a href="mailto:tech.fellowship.latam@gmail.com">tech.fellowship.latam@gmail.com</a><br>
+             <strong>WeChat ID:</strong> wxid_4ndidb5n6w9x12</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÍMITES / PRIVACIDAD -->
+    <section id="limites" class="limits">
+      <div class="container">
+        <h2 class="lang-es">Límites / Privacidad</h2>
+        <h2 class="lang-zh">限制 / 隐私</h2>
+        <div class="card">
+          <p class="lang-es">Trabajamos con información pública o preexistente.</p>
+          <p class="lang-zh">我们仅使用公开或既有的信息。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="container card">
+        <h2 class="lang-es">Contáctanos</h2>
+        <h2 class="lang-zh">联系我们</h2>
+        <p class="lang-es"><strong>Email:</strong> <a href="mailto:tech.fellowship.latam@gmail.com">tech.fellowship.latam@gmail.com</a><br>
+           <strong>WeChat:</strong> wxid_4ndidb5n6w9x12</p>
+        <p class="lang-zh"><strong>Email：</strong> <a href="mailto:tech.fellowship.latam@gmail.com">tech.fellowship.latam@gmail.com</a><br>
+           <strong>WeChat：</strong> wxid_4ndidb5n6w9x12</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="sep"></div>
+      <p style="margin-top:12px" class="lang-es">© 2025 Fellowship AI China–Latam — Página bilingüe (M1-2 final, sin QR).</p>
+      <p style="margin-top:12px" class="lang-zh">© 2025 Fellowship AI China–Latam — 双语页面（M1-2 完成，无二维码）。</p>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang){
+      document.documentElement.setAttribute('data-lang',lang);
+      localStorage.setItem('tf_lang',lang);
+      document.querySelector('.chip-es').classList.toggle('active',lang==='es');
+      document.querySelector('.chip-zh').classList.toggle('active',lang==='zh');
+    }
+    (function(){
+      const saved = localStorage.getItem('tf_lang');
+      const qs = new URLSearchParams(location.search).get('lang');
+      const lang = qs || saved || 'es';
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>
